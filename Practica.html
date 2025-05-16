@@ -1,0 +1,111 @@
+<DOCTYPE! html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta lang="es-ar">
+        <meta name="viewport" content="width=device-width,initial-scaele=1.0">
+        <title>Biografia</title>
+        <link rel="stylesheet" href="CSS/styleP.css">
+    </head>
+    <body>
+        <header class="fondo">
+            <h1><strong>Benjamin Contreras Ferrari</strong></h1>
+        </header>
+        <main>
+            <section class="principal">
+                 <h1>Biografia</h1>
+                 <p>Mi nombre es Benjamin Contreras Ferrari, naci en Neuquen capital el 2 de febrero de 2008
+                    fui a 2 jardines diferentes los cuales son jardin casita encantada y el jardin 50, durante
+                    la primaria, asisti siempre a la misma institucion, la escuela 343. En la secundaria, asisto
+                    a la EPET 20, a la que actualmente sigo asistiendo. Me gustaria seguir una carrera relacionada
+                    con la programacion y terminar trabajando de lo mismo.</p>                                                     
+            </section>
+            <section class="derecha">
+                <h2>Peliculas favoritas</h2>
+                <ol>
+                    <section id="Or">
+                    <li class="L">Orgullo y prejuicio</li>
+                    </section>
+                    <section id="Wh">
+                    <li class="L">Whiplash</li>
+                    </section>
+                    <section id="Me">
+                    <li class="L">Mente indomable</li>
+                    </section>
+                </ol>
+            </section>
+        </main>
+        <article class="fondo">
+            <div class="caja">
+                <h3 id="h3"><strong>Datos de interes</strong></h3>
+                <ul>
+                    <section id="celular">
+                        <div id="parte1">
+                             <li id="li1">Me platine el hollow knight</li>
+                            <a href="https://hollowknight.fandom.com/es/wiki/Hollow_Knight" target="_blank"><img src="Imagenes/4643fb058642335c523910f3a7910575f56372f612f7c0c9a497aaae978d3e51.avif" class="imagen" alt="imagen de hollow knight" title="Hollow knight" id="cuadro"/></a>
+                        </div>
+                        <div id="parte2">
+                            <li id="li2">Me platine elden ring</li>
+                            <a href="https://eldenring.fandom.com/es/wiki/Wiki_Elden_Ring" target="_blank"><img src="Imagenes/elden-ring-key-art.avif" class="imagen" alt="imagen de elden ring" title="Elden ring" id="cuadro1"/></a>
+                        </div>
+                    </section>
+                    <section>
+                        <div class="contenedor">
+                            <a href="https://www.tiktok.com/" target="_blank"><img src="Imagenes/N5YZD7PS55IQLN6B6T72J6WERU.avif" class="simbolo" id="simbolo" alt="Icono Tiktok"></a>
+                            <a href="https://www.instagram.com/" target="_blank"><img src="Imagenes/Instagram_logo_2022.svg" class="simbolo" id="simbolo1" alt="Icono instagram"></a>
+                        </div>
+                        <button onclick="moverI()" class="boton">←</button>
+                        <button onclick="mover()"  class="boton">→</button>
+                    </section>    
+                </ul>
+            </div>
+            <div class="formulario">
+                <h3>Formulario</h3>
+                <form onsubmit="mostrarDatos(event)">
+                    <section class="nombre">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre">
+                    <button type="submit">Enviar</button>
+                    </section>
+                    <section class="email">
+                    <label for="email">Email</label>
+                    <input type="text" id="email" name="email">
+                    <button type="submit">Enviar</button>
+                    </section>
+                </form>
+                <P id="resultado"></P>
+                <P id="resultado1"></P>
+                <script>
+                        function mostrarDatos(event) {
+                        event.preventDefault();
+                        const nombre = document.getElementById("nombre").value;
+                        const email = document.getElementById("email").value;
+                        document.getElementById("resultado").innerText = "Hola " + nombre + "!";
+                        document.getElementById("resultado1").innerText = "Tu Email es: " + email;
+                        }
+                        let posicion = 0;
+                        const limite = 500;
+                        const limite2 = -500;
+                        function moverI() {
+                             if (posicion > limite2) {
+                        posicion -= 500;
+                        document.getElementById("simbolo").style.left = posicion + "px";
+                        document.getElementById("simbolo1").style.left = posicion + "px";
+                             }
+                        }
+                        function mover() {
+                             if (posicion < limite) {
+                        posicion += 500;
+                        document.getElementById("simbolo").style.left = posicion + "px";
+                        document.getElementById("simbolo1").style.left = posicion + "px";
+                             }
+                             }
+                </script>
+            </div>
+            <iframe src="https://www.youtube.com/embed/icK5DN0MLPc" frameborder="0" allowfullscreen></iframe>
+        </article>
+        <footer class="contenedor">
+            <p id="texto">&copy; 2024 Empresa del coco. Todos los derechos reservados.</p>
+        </footer>
+    </body>
+</html>
