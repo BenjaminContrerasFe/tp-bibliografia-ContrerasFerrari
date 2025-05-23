@@ -51,8 +51,12 @@
                     </section>
                     <section>
                         <div class="contenedor">
+                            <div class="tiktok">
                             <a href="https://www.tiktok.com/" target="_blank"><img src="Imagenes/N5YZD7PS55IQLN6B6T72J6WERU.avif" class="simbolo" id="simbolo" alt="Icono Tiktok"></a>
+                            </div>
+                            <div class="instagram">
                             <a href="https://www.instagram.com/" target="_blank"><img src="Imagenes/Instagram_logo_2022.svg" class="simbolo" id="simbolo1" alt="Icono instagram"></a>
+                            </div>
                         </div>
                         <button onclick="moverI()" class="boton">←</button>
                         <button onclick="mover()"  class="boton">→</button>
@@ -84,18 +88,18 @@
                         document.getElementById("resultado1").innerText = "Tu Email es: " + email;
                         }
                         let posicion = 0;
-                        const limite = 500;
-                        const limite2 = -500;
+                        const limite = 0;
+                        const limite2 = -200;
                         function moverI() {
                              if (posicion > limite2) {
-                        posicion -= 500;
+                        posicion -= 200;
                         document.getElementById("simbolo").style.left = posicion + "px";
                         document.getElementById("simbolo1").style.left = posicion + "px";
                              }
                         }
                         function mover() {
                              if (posicion < limite) {
-                        posicion += 500;
+                        posicion += 200;
                         document.getElementById("simbolo").style.left = posicion + "px";
                         document.getElementById("simbolo1").style.left = posicion + "px";
                              }
@@ -105,7 +109,7 @@
             <iframe src="https://www.youtube.com/embed/icK5DN0MLPc" frameborder="0" allowfullscreen></iframe>
         </article>
         <footer class="contenedor">
-            <p id="texto">&copy; 2024 Empresa del coco. Todos los derechos reservados.</p>
+            <p id="texto">&copy; 2024 Litaa. Todos los derechos reservados.</p>
         </footer>
     </body>
 </html>
