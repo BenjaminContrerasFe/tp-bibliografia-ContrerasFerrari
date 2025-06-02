@@ -7,7 +7,7 @@ body {
 }
 
 header {
-    background-image: url("E:/Proyecto/Imagenes/774361_5.jpg");
+    background-image: url("C:/Users/usuario/Desktop/Proyecto/Imagenes/774361_5.jpg");
     background-size: cover;
     background-position: center;
     padding: 20px 0;
@@ -38,7 +38,7 @@ main {
     border-radius: 10px;
 }
 
-h2{
+#peliculas{
     text-align: center;
 }
 
@@ -62,19 +62,19 @@ h2{
 }
 
 #Or{
-    background-image: url("E:/Proyecto/Imagenes/d6b5f230dad787b37a34674cd2f95ffe2dc0c07942d8c69e02bde1f15b661874._SX1080_FMjpg_.jpg");
+    background-image: url("C:/Users/usuario/Desktop/Proyecto/Imagenes/d6b5f230dad787b37a34674cd2f95ffe2dc0c07942d8c69e02bde1f15b661874._SX1080_FMjpg_.jpg");
     background-size: cover;
     background-position: center;
 }
 
 #Wh{
-    background-image: url("E:/Proyecto/Imagenes/663d8b7c03def2c0bb027e96_Whiplash.webp");
+    background-image: url("C:/Users/usuario/Desktop/Proyecto/Imagenes/663d8b7c03def2c0bb027e96_Whiplash.webp");
     background-size: cover;
     background-position: center;
 }
 
 #Me{
-    background-image: url("E:/Proyecto/Imagenes/o_1c6kg3dbc107g26b2fp11d1lkpa.jpg");
+    background-image: url("C:/Users/usuario/Desktop/Proyecto/Imagenes/o_1c6kg3dbc107g26b2fp11d1lkpa.jpg");
     background-size: cover;
     background-position: center;
 }
